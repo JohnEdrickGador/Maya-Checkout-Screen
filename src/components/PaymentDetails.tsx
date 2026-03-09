@@ -5,7 +5,7 @@ import FormFooter from "./FormFooter";
 
 export default function PaymentDetails() {
   return (
-    <div className="left-column">
+    <div className="payment-details-screen">
       <div className="payment-details-container">
         <div className="back-to-merchant">
           <span className="material-symbols-outlined">arrow_back</span>{" "}

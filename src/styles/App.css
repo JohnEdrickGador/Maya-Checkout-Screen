@@ -28,11 +28,3 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.left-column {
-  background-color: #f8f8f8;
-}
-
-.right-column {
-  border: 1px solid blue;
-}

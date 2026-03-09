@@ -1,4 +1,3 @@
-import React from "react";
 import mayaBusiness from "../assets/logos/maya-business.png";
 
 export default function OrderSummaryFooter() {

@@ -8,8 +8,13 @@
   cursor: pointer;
 }
 
+.payment-details-screen {
+  background-color: #f8f8f8;
+}
+
 .payment-details-container {
   margin: auto;
+  background-color: #f8f8f8;
   width: 80%;
   margin-top: 1rem;
 }
