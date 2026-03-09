@@ -59,6 +59,21 @@
   cursor: pointer;
 }
 
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
 .card-number-container {
   display: flex;
   flex-direction: column;
