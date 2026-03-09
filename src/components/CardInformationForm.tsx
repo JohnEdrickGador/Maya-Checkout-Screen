@@ -10,7 +10,6 @@ export default function CardInformationForm() {
           <input type="text" placeholder="Last Name" />
         </div>
         <div className="card-number-container">
-          {/* <input type="text" placeholder="Card Number" /> */}
           <InputMask
             mask="9999 9999 9999 9999"
             placeholder="Card Number"

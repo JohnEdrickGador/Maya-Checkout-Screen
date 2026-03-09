@@ -1,0 +1,23 @@
+.cart-container {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .cart-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Cerebri Sans Pro";
+    background-color: #f8f8f8;
+  }
+
+  .cart-container span {
+    color: #13b668;
+  }
+
+  .cart-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

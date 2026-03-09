@@ -45,6 +45,22 @@
   color: gray;
 }
 
+.order-total-container {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.order-total-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.order-total-container h1 {
+  font-size: 1.2rem;
+}
+
 .order-summary-footer {
   display: flex;
   justify-content: center;
@@ -55,4 +71,13 @@
 
 .order-summary-footer img {
   width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .order-summary-container {
+    display: none;
+  }
+  .order-total-details {
+    display: none;
+  }
 }

@@ -8,7 +8,7 @@ export default function PaymentDetails() {
     <div className="payment-details-screen">
       <div className="payment-details-container">
         <div className="back-to-merchant">
-          <span className="material-symbols-outlined">arrow_back</span>{" "}
+          <span className="material-icons">arrow_back</span>{" "}
           <p>Back to Merchant</p>
         </div>
         <PaymentOptionsContainer />
