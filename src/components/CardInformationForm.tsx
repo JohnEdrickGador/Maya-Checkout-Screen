@@ -59,7 +59,14 @@ export default function CardInformationForm() {
     e.preventDefault();
 
     if (validate()) {
-      alert("Payment submitted (mock)");
+      alert("Payment submitted");
+      setForm({
+        firstName: "",
+        lastName: "",
+        cardNumber: "",
+        expiry: "",
+        cvv: "",
+      });
     }
   };
 
@@ -73,29 +80,25 @@ export default function CardInformationForm() {
       <FormHeader />
       <form action="submit" className="card-form" onSubmit={handleSubmit}>
         <div className="input-container">
-          <div>
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={form.firstName}
-              onChange={handleChange}
-              className={errors.firstName ? "error" : ""}
-            />
-          </div>
-          {errors.firstName && <p className="error-text">{errors.firstName}</p>}
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value={form.firstName}
+            onChange={handleChange}
+            className={errors.firstName ? "error" : ""}
+          />
+          {/* {errors.firstName && <p className="error-text">{errors.firstName}</p>} */}
 
-          <div>
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={form.lastName}
-              onChange={handleChange}
-              className={errors.lastName ? "error" : ""}
-            />
-            {errors.lastName && <p className="error-text">{errors.lastName}</p>}
-          </div>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={form.lastName}
+            onChange={handleChange}
+            className={errors.lastName ? "error" : ""}
+          />
+          {/* {errors.lastName && <p className="error-text">{errors.lastName}</p>} */}
         </div>
         <div className="card-number-container">
           <InputMask
@@ -113,31 +116,27 @@ export default function CardInformationForm() {
         </div>
 
         <div className="input-container">
-          <div>
-            <InputMask
-              mask="99/99"
-              maskChar="_"
-              name="expiry"
-              placeholder="Expiry Date"
-              value={form.expiry}
-              onChange={handleChange}
-              className={errors.expiry ? "error" : ""}
-            />
-            {errors.expiry && <p className="error-text">{errors.expiry}</p>}
-          </div>
+          <InputMask
+            mask="99/99"
+            maskChar="_"
+            name="expiry"
+            placeholder="Expiry Date"
+            value={form.expiry}
+            onChange={handleChange}
+            className={errors.expiry ? "error" : ""}
+          />
+          {/* {errors.expiry && <p className="error-text">{errors.expiry}</p>} */}
 
-          <div>
-            <InputMask
-              mask="999"
-              maskChar=""
-              name="cvv"
-              placeholder="CVV"
-              value={form.cvv}
-              onChange={handleChange}
-              className={errors.cvv ? "error" : ""}
-            />
-            {errors.cvv && <p className="error-text">{errors.cvv}</p>}
-          </div>
+          <InputMask
+            mask="999"
+            maskChar=""
+            name="cvv"
+            placeholder="CVV"
+            value={form.cvv}
+            onChange={handleChange}
+            className={errors.cvv ? "error" : ""}
+          />
+          {/* {errors.cvv && <p className="error-text">{errors.cvv}</p>} */}
         </div>
         <div className="submit-button-container">
           <button disabled={!isFormValid}>Confirm and pay</button>
