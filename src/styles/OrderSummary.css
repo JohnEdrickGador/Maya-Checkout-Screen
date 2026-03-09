@@ -1,0 +1,58 @@
+.order-summary-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  font-family: "Cerebri Sans Pro";
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.order-header {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-item {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.order-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.order-header img {
+  width: 30%;
+  object-fit: contain;
+}
+
+.order-item h1 {
+  font-size: 1.2rem;
+}
+
+.order-item h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: gray;
+}
+
+.order-summary-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: gray;
+}
+
+.order-summary-footer img {
+  width: 30%;
+}

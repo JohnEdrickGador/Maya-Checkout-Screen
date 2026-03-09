@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../assets/fonts/CerebriSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../assets/fonts/CerebriSansPro-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../assets/fonts/CerebriSansPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-column {
+  background-color: #f8f8f8;
+}
+
+.right-column {
+  border: 1px solid blue;
+}

@@ -1,0 +1,57 @@
+/* .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  font-family: "Cerebri Sans Pro";
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+} */
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  font-family: "Cerebri Sans Pro";
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Only apply spacing if there's text */
+.divider.with-text::before {
+  margin-right: 10px;
+}
+
+.divider.with-text::after {
+  margin-left: 10px;
+}
+
+/* No extra margin if no text */
+.divider.no-text::before,
+.divider.no-text::after {
+  margin: 0;
+}

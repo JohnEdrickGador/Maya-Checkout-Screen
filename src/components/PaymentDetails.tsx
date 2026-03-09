@@ -1,0 +1,21 @@
+import PaymentOptionsContainer from "./PaymentOptionsContainer";
+import Divider from "./Divider";
+import CardInformationForm from "./CardInformationForm";
+import FormFooter from "./FormFooter";
+
+export default function PaymentDetails() {
+  return (
+    <div className="left-column">
+      <div className="payment-details-container">
+        <div className="back-to-merchant">
+          <span className="material-symbols-outlined">arrow_back</span>{" "}
+          <p>Back to Merchant</p>
+        </div>
+        <PaymentOptionsContainer />
+        <Divider dividerText="Or pay using your credit/debit card or wallet" />
+        <CardInformationForm />
+        <FormFooter />
+      </div>
+    </div>
+  );
+}
