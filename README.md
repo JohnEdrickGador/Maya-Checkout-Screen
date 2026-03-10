@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Running the project locally
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Follow the steps below to run this React + Vite application on your local machine.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Make sure you have the following installed:
 
-## Expanding the ESLint configuration
+- Node.js (version 16 or higher is recommended)
+- npm (comes with Node.js)
+- A code editor such as Visual Studio code
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can verify the installation by running:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+node -v
+npm -v
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Clone the Repository
+
+```bash
+git clone https://github.com/JohnEdrickGador/Maya-Checkout-Screen
+```
+
+navigate into the project folder:
+
+```bash
+cd Maya-Checkout-Screen
+```
+
+### Install Dependencies
+
+install the required dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+run the development server:
+
+```bash
+npm run dev
+```
